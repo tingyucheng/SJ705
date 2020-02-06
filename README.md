@@ -1,10 +1,10 @@
 SJ705 Package Tutorial 
 ========
-## Setting up the environment
+## Set up the environment
 ### Environment
 * Ubuntu 16.04 LTS OS
 * ROS Kinetic 1.12.14
-* Gazebo 7.16.0 (least 7.7.0)
+* Gazebo 7.16.0
 
 ## Package installation
 ### Installation steps
@@ -16,11 +16,12 @@ $ catkin_make
 ```
 2. Clone 
 ```
-git clone url
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/tingyucheng/SJ705.git
 ```
 3. Install ROS dependencies using the rosdep install command
 ```
-$ cd ~/catkin_ws/
+$ cd ~/catkin_ws
 $ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
 ```
 4. Run catkin_make in your workspace to build the project
@@ -33,8 +34,8 @@ $ catkin_make
 * To run simulator by using Gazebo
 
 ```
-cd catkin_ws
-source devel/setup.bash
+$ cd ~/catkin_ws/
+$ source devel/setup.bash
 ```
 Run the code above every time to source your setup.*sh file if you open a new terminal.
   
@@ -44,9 +45,7 @@ $ roslaunch sj705_gazebo sj705_world.launch
 ```
 You will see sj705 robot in a simulation world.
    
-
-
-Open a new terminal, source your setup.*sh file as before, and then run the code to control joints of the robot.
+Open a new terminal, source your setup.*sh file as described above, and then run the code below to control joints of the robot.
 ```
 $ roslaunch sj705_control sj705_control.launch
 ```
@@ -55,6 +54,9 @@ Then run the code
 ```
 $ rosrun publisher_file sj705_instruction 
 ```
+The message shown in the terminal will guide you to give proper input angles.
+
+![](https://i.imgur.com/fTA55tU.png)
 
 ## DH table of sj705
 
