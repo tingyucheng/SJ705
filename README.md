@@ -1,6 +1,6 @@
 SJ705 Package Tutorial 
 ========
-## Setting up the environment
+## Set up the environment
 ### Environment
 * Ubuntu 16.04 LTS OS
 * ROS Kinetic 1.12.14
