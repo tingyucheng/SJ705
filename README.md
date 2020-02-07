@@ -54,7 +54,8 @@ Then run the code
 ```
 $ rosrun publisher_file sj705_instruction 
 ```
-
+The message shown in the terminal will guide you to give proper input angles.
+![](https://i.imgur.com/fTA55tU.png)
 
 ## DH table of sj705
 
