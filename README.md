@@ -16,7 +16,8 @@ $ catkin_make
 ```
 2. Clone 
 ```
-git clone https://github.com/tingyucheng/SJ705.git
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/tingyucheng/SJ705.git
 ```
 3. Install ROS dependencies using the rosdep install command
 ```
@@ -33,8 +34,8 @@ $ catkin_make
 * To run simulator by using Gazebo
 
 ```
-cd catkin_ws
-source devel/setup.bash
+$ cd ~/catkin_ws/
+$ source devel/setup.bash
 ```
 Run the code above every time to source your setup.*sh file if you open a new terminal.
   
@@ -44,7 +45,7 @@ $ roslaunch sj705_gazebo sj705_world.launch
 ```
 You will see sj705 robot in a simulation world.
    
-Open a new terminal, source your setup.*sh file as before, and then run the code to control joints of the robot.
+Open a new terminal, source your setup.*sh file as described above, and then run the code below to control joints of the robot.
 ```
 $ roslaunch sj705_control sj705_control.launch
 ```
@@ -53,6 +54,7 @@ Then run the code
 ```
 $ rosrun publisher_file sj705_instruction 
 ```
+
 
 ## DH table of sj705
 
