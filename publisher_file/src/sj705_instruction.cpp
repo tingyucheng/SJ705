@@ -54,7 +54,8 @@ int main(int argc, char **argv)
                 case 'f':
                     cout << "Control joints (theta1~theta7) (degree): ";
                     cin >> joint1.data >> joint2.data >> joint3.data >> joint4.data >> joint5.data >> joint6.data >> joint7.data;
-
+                    cout << endl;
+                    
                     joint1.data = joint1.data / 180 * PI;
                     joint2.data = joint2.data / 180 * PI;
                     joint3.data = joint3.data / 180 * PI;
